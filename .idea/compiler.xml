@@ -8,19 +8,22 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="sp02-itemservice" />
-        <module name="sp01-commons" />
+        <module name="sp03-userservice" />
         <module name="springcloud01" />
+        <module name="sp01-commons" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="sp01-commons" target="1.8" />
       <module name="sp02-itemservice" target="1.8" />
+      <module name="sp03-userservice" target="1.8" />
       <module name="springcloud01" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="sp02-itemservice" options="-parameters" />
+      <module name="sp03-userservice" options="" />
       <module name="springcloud01" options="-parameters" />
     </option>
   </component>
