@@ -4,5 +4,6 @@
     <file url="file://$PROJECT_DIR$/springcloud01/sp02-itemservice/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud01/sp03-userservice/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud01/sp04-orderservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud01/sp05-eureka/src/main/java" charset="UTF-8" />
   </component>
 </project>
