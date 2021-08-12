@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/CGB2104-4.iml" filepath="$PROJECT_DIR$/.idea/CGB2104-4.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud01/sp01-commons/sp01-commons.iml" filepath="$PROJECT_DIR$/springcloud01/sp01-commons/sp01-commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud01/sp02-itemservice/sp02-itemservice.iml" filepath="$PROJECT_DIR$/springcloud01/sp02-itemservice/sp02-itemservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud01/springcloud01.iml" filepath="$PROJECT_DIR$/springcloud01/springcloud01.iml" />
     </modules>
   </component>
