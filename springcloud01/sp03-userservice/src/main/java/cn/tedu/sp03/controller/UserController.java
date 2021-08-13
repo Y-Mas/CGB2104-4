@@ -27,5 +27,7 @@ public class UserController {
         userService.addScore(userId, score);
         return JsonResult.ok().msg("增加积分成功");
     }
-
+    @GetMapping("/favicon.ico")
+    public void ico(){
+    }
 }
