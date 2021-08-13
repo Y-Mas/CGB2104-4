@@ -26,7 +26,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="sp02-itemservice" options="-parameters" />
-      <module name="sp03-userservice" options="" />
+      <module name="sp03-userservice" options="-parameters" />
       <module name="sp04-orderservice" options="-parameters" />
       <module name="sp05-eureka" options="-parameters" />
       <module name="springcloud01" options="-parameters" />
