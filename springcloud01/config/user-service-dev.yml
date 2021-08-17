@@ -1,6 +1,9 @@
 spring:
   application:
     name: user-service
+  cloud:
+    config:
+      override-none: true
 server:
   port: 8101
 # 自定义的配置属性
