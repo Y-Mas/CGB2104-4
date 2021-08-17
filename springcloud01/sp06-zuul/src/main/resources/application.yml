@@ -15,3 +15,9 @@ zuul:
     user-service: /user-service/**
     order-service: /order-service/**
   retryable: true
+ # 暴露 actuator监控
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

@@ -1,0 +1,8 @@
+# eureka 2001
+# zuul  3001
+server:
+  port: 4001
+hystrix:
+  dashboard:
+    proxy-stream-allow-list:
+      - localhost
