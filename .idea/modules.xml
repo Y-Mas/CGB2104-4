@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/springcloud01/sp06-zuul/sp06-zuul.iml" filepath="$PROJECT_DIR$/springcloud01/sp06-zuul/sp06-zuul.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud01/sp07-hystrix-dashboard/sp07-hystrix-dashboard.iml" filepath="$PROJECT_DIR$/springcloud01/sp07-hystrix-dashboard/sp07-hystrix-dashboard.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud01/sp08-turbine/sp08-turbine.iml" filepath="$PROJECT_DIR$/springcloud01/sp08-turbine/sp08-turbine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud01/sp09-config/sp09-config.iml" filepath="$PROJECT_DIR$/springcloud01/sp09-config/sp09-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud01/springcloud01.iml" filepath="$PROJECT_DIR$/springcloud01/springcloud01.iml" />
     </modules>
   </component>

@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/springcloud01/sp06-zuul/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud01/sp07-hystrix-dashboard/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud01/sp08-turbine/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud01/sp09-config/pom.xml" />
       </list>
     </option>
   </component>
