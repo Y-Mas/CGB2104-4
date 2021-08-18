@@ -21,6 +21,18 @@ public class Consumer {
             public void handle(String consumerTag, Delivery message) throws IOException {
                 String s = new String(message.getBody());
                 System.out.println("收到"+s);
+                //模拟处理器耗时消息
+                //遍历字符,没找到一个".",暂停一秒
+                for (int i = 0; i<s.length();i++){
+                    if (s.charAt(i) == '.'){
+                        try {
+                            Thread.sleep(1000);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+                System.out.println("**********消息处理完成**********");
             }
         };
         CancelCallback cancelCallback = new CancelCallback() {
