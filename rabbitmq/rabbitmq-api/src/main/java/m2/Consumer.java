@@ -19,8 +19,8 @@ public class Consumer {
         DeliverCallback deliverCallback = new DeliverCallback() {
             @Override
             public void handle(String consumerTag, Delivery message) throws IOException {
-                byte[] body = message.getBody();
-                System.out.println(body);
+                String s = new String(message.getBody());
+                System.out.println("收到"+s);
             }
         };
         CancelCallback cancelCallback = new CancelCallback() {
