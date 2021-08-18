@@ -7,7 +7,6 @@
         <groupId>cn.tedu</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <groupId>cn.tedu</groupId>
     <artifactId>sp03-userservice</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>sp03-userservice</name>
@@ -32,6 +31,10 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
     </dependencies>
 </project>
