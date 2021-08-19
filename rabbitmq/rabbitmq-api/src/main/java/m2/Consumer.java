@@ -14,7 +14,7 @@ public class Consumer {
         f.setPassword("admin");
         Connection con = f.newConnection();
         Channel c = con.createChannel();
-        c.queueDeclare("helloWorld",false,false,false,null);
+        c.queueDeclare("task_queue",true,false,false,null);
 
         DeliverCallback deliverCallback = new DeliverCallback() {
             @Override
@@ -43,6 +43,6 @@ public class Consumer {
             }
         };
         c.basicQos(1);
-        c.basicConsume("helloWorld", false, deliverCallback, cancelCallback);
+        c.basicConsume("task_queue", false, deliverCallback, cancelCallback);
     }
 }

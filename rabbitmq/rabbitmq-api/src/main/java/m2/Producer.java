@@ -3,6 +3,7 @@ package m2;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
+import com.rabbitmq.client.MessageProperties;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -17,11 +18,11 @@ public class Producer {
         f.setPassword("admin");
         Connection con = f.newConnection();
         Channel c = con.createChannel();
-        c.queueDeclare("helloWorld",false,false,false,null);
+        c.queueDeclare("task_queue",true,false,false,null);
         while (true){
             System.out.println("xxx??: ");
             String s = new Scanner(System.in).nextLine();
-            c.basicPublish("", "helloWorld", null, s.getBytes());
+            c.basicPublish("", "task_queue", MessageProperties.PERSISTENT_TEXT_PLAIN, s.getBytes());
         }
     }
 }
