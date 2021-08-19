@@ -7,6 +7,11 @@ spring:
         git:
           uri: https://gitee.com/yang-zhuwei/CGB2104-4.git
           search-paths: springcloud01/config
+  rabbitmq:
+    host: 192.168.126.140
+    port: 5672
+    username: admin
+    password: admin
 server:
   port: 6001
 eureka:

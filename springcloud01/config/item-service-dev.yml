@@ -11,3 +11,8 @@ eureka:
     service-url:
       # /eureka 路径是客户端通信的路径
       defaultZone: http://eureka1:2001/eureka
+  rabbitmq:
+    host: 192.168.126.140
+    port: 5672
+    username: admin
+    password: admin
