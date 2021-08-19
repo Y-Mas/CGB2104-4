@@ -32,6 +32,7 @@ public class Consumer {
                         }
                     }
                 }
+                c.basicAck(message.getEnvelope().getDeliveryTag(),false);
                 System.out.println("**********消息处理完成**********");
             }
         };
@@ -41,6 +42,7 @@ public class Consumer {
 
             }
         };
-        c.basicConsume("helloWorld", true, deliverCallback, cancelCallback);
+        c.basicQos(1);
+        c.basicConsume("helloWorld", false, deliverCallback, cancelCallback);
     }
 }
