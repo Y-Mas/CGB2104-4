@@ -5,6 +5,8 @@
     <file url="file://$PROJECT_DIR$/pd-web/src/main/java/com/pd/common/utils/CookieUtils.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rabbitmq-springboot/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/seata-at/db-init/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata-at/eureka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata-at/order-parent/account/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud01/sp02-itemservice/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud01/sp03-userservice/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud01/sp04-orderservice/src/main/java" charset="UTF-8" />

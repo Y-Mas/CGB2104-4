@@ -11,6 +11,7 @@
         <module name="sp04-orderservice" />
         <module name="sp09-config" />
         <module name="rabbitmq-api" />
+        <module name="eureka" />
         <module name="db-init" />
         <module name="sp05-eureka" />
         <module name="sp01-commons" />
@@ -20,10 +21,14 @@
         <module name="sp06-zuul" />
         <module name="sp07-hystrix-dashboard" />
         <module name="sp08-turbine" />
+        <module name="account" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="account" target="1.8" />
       <module name="db-init" target="1.8" />
+      <module name="eureka" target="1.8" />
+      <module name="order-parent" target="1.8" />
       <module name="pd-web" target="1.8" />
       <module name="rabbitmq-api" target="1.8" />
       <module name="rabbitmq-springboot" target="1.8" />
@@ -42,7 +47,9 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="account" options="-parameters" />
       <module name="db-init" options="-parameters" />
+      <module name="eureka" options="-parameters" />
       <module name="pd-web" options="-parameters" />
       <module name="rabbitmq-springboot" options="-parameters" />
       <module name="sp02-itemservice" options="-parameters" />
