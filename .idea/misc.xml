@@ -13,6 +13,9 @@
         <option value="$PROJECT_DIR$/springcloud01/sp07-hystrix-dashboard/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud01/sp08-turbine/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud01/sp09-config/pom.xml" />
+        <option value="$PROJECT_DIR$/pd-web/pom.xml" />
+        <option value="$PROJECT_DIR$/rabbitmq/rabbitmq-api/pom.xml" />
+        <option value="$PROJECT_DIR$/rabbitmq-springboot/pom.xml" />
       </list>
     </option>
   </component>
