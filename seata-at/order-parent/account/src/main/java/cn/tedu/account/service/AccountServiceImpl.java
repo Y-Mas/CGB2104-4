@@ -16,5 +16,8 @@ public class AccountServiceImpl implements AccountService{
     @Override
     public void decrease(Long userId, BigDecimal money) {
         accountMapper.decrease(userId, money);
+        if (Math.random() < 0.5){
+            throw new RuntimeException();
+        }
     }
 }
