@@ -5,7 +5,12 @@ spring:
     url: jdbc:mysql://localhost/seata_storage?useUnicode=true&characterEncoding=UTF-8&serverTimezon=GMT%2B8
     username: root
     password: root
+    jdbcUrl: ${spring.datasource.url}
     driver-class-name: com.mysql.cj.jdbc.Driver
+  cloud:
+    alibaba:
+      seata:
+        tx-service-group: order_tx_group
 server:
   port: 8082
 eureka:

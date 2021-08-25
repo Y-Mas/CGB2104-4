@@ -5,8 +5,10 @@ import cn.tedu.order.feign.AccountClient;
 import cn.tedu.order.feign.EasyIdClient;
 import cn.tedu.order.feign.StorageClient;
 import cn.tedu.order.mapper.OrderMapper;
+import io.seata.spring.annotation.GlobalTransactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Random;
 
@@ -21,7 +23,8 @@ public class OrderServiceImpl implements OrderService{
     @Autowired
     private AccountClient accountClient;
 
-
+    @Transactional //本地事务
+    @GlobalTransactional  //开启全局事务
     @Override
     public void create(Order order) {
         //TODO: 远程调用ID发号器,获取订单id

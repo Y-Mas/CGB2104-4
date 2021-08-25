@@ -2,11 +2,16 @@ spring:
   application:
     name: account
   datasource:
-    driver-class-name:
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql:///seata_account?useUnicode=true&characterEncoding=UTF-8&serverserverTimezone=GMT%2B8
+    jdbcUrl: ${spring.datasource.url}
     username: root
     password: root
 
+  cloud:
+    alibaba:
+      seata:
+        tx-service-group: order_tx_group
 server:
   port: 8081
 #account 8081
