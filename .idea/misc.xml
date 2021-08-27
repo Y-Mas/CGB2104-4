@@ -23,6 +23,14 @@
         <option value="$PROJECT_DIR$/seata-at/order-parent/storage/pom.xml" />
         <option value="$PROJECT_DIR$/seata-at/order-parent/order/pom.xml" />
         <option value="$PROJECT_DIR$/seata-at/easy-id-generator/pom.xml" />
+        <option value="$PROJECT_DIR$/seata-tcc/easy-id-generator/pom.xml" />
+        <option value="$PROJECT_DIR$/seata-tcc/db-init/pom.xml" />
+        <option value="$PROJECT_DIR$/seata-tcc/eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/seata-tcc/order-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/seata-tcc/order-parent/account/pom.xml" />
+        <option value="$PROJECT_DIR$/seata-tcc/order-parent/order/pom.xml" />
+        <option value="$PROJECT_DIR$/seata-tcc/order-parent/storage/pom.xml" />
+        <option value="$PROJECT_DIR$/seata-tcc/easy-id-generator1/pom.xml" />
       </list>
     </option>
   </component>
