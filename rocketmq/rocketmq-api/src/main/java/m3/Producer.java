@@ -19,6 +19,12 @@ public class Producer {
         p.setTransactionListener(new TransactionListener() {
             @Override
             public LocalTransactionState executeLocalTransaction(Message msg, Object arg) {
+                System.out.println("模拟网络中断");
+                if (Math.random()<1){
+                    //执行本地事务中一般不会返回unknown
+                    //此处只为了测试
+                    return LocalTransactionState.UNKNOW;
+                }
                 System.out.println("执行本地事务: "+arg);
                 if (Math.random()<0.5){
                     System.out.println("本地事务执行成功");
@@ -30,8 +36,10 @@ public class Producer {
             }
             @Override
             public LocalTransactionState checkLocalTransaction(MessageExt msg) {
-                return null;
-            }
+                System.out.println("处理服务器的事务状态回查");
+                System.out.println("模拟网络中断");
+                    return LocalTransactionState.UNKNOW;
+                }
         });
         //启动
         p.start();
